@@ -45,12 +45,14 @@ defmodule Matchmaking do
            <<_::32, _::_*8>>, <<_::32, _::_*8>>, <<_::24, _::_*8>>, <<_::48, _::_*8>>}
 def get_nakshtra(name) do
   cond do
+    #champa ? dhiraj ? dheeraj
+    # da dee du repeated
     String.match?(name,~r/^chu/) -> {"ashwini",1,"deva","aadi","mesh","chatushpada","ashwa","kshattriya"}
     String.match?(name,~r/^che/) -> {"ashwini",2,"deva","aadi","mesh","chatushpada","ashwa","kshattriya"}
     String.match?(name,~r/^cho/) -> {"ashwini",3,"deva","aadi","mesh","chatushpada","ashwa","kshattriya"}
     String.match?(name,~r/^la/) -> {"ashwini",4,"deva","aadi","mesh","chatushpada","ashwa","kshattriya"}
     String.match?(name,~r/^lee|^li/) -> {"bharani",1,"manushya","madhya","mesh","chatushpada","gaja","kshattriya"}
-    String.match?(name,~r/^lu/) -> {"bharani",2,"manushya","madhya","mesh","chatushpada","gaja","kshattriya"}
+    String.match?(name,~r/^lu|^loo/) -> {"bharani",2,"manushya","madhya","mesh","chatushpada","gaja","kshattriya"}
     String.match?(name,~r/^le/) -> {"bharani",3,"manushya","madhya","mesh","chatushpada","gaja","kshattriya"}
     String.match?(name,~r/^lo/) -> {"bharani",4,"manushya","madhya","mesh","chatushpada","gaja","kshattriya"}
     String.match?(name,~r/^a/) -> {"krittika",1,"rakshas","antya","mesh","chatushpada","mesha","kshattriya"}
@@ -77,8 +79,8 @@ def get_nakshtra(name) do
     String.match?(name,~r/^he/) -> {"pushya",2,"deva","madhya","karka","jalchar","mesha","brahmin"}
     String.match?(name,~r/^ho/) -> {"pushya",3,"deva","madhya","karka","jalchar","mesha","brahmin"}
     String.match?(name,~r/^daa|^da/) -> {"pushya",4,"deva","madhya","karka","jalchar","mesha","brahmin"}
-    String.match?(name,~r/^dee/) -> {"ashlesha",1,"rakshas","antya","karka","jalchar","marjar","brahmin"}
-    String.match?(name,~r/^doo/) -> {"ashlesha",2,"rakshas","antya","karka","jalchar","marjar","brahmin"}
+    String.match?(name,~r/^dee|^di/) -> {"ashlesha",1,"rakshas","antya","karka","jalchar","marjar","brahmin"}
+    String.match?(name,~r/^doo|^du/) -> {"ashlesha",2,"rakshas","antya","karka","jalchar","marjar","brahmin"}
     String.match?(name,~r/^de/) -> {"ashlesha",3,"rakshas","antya","karka","jalchar","marjar","brahmin"}
     String.match?(name,~r/^do/) -> {"ashlesha",4,"rakshas","antya","karka","jalchar","marjar","brahmin"}
     String.match?(name,~r/^maa|^ma/) -> {"magha",1,"rakshas","antya","simha","vanacara","mushak","kshattriya"}
@@ -87,8 +89,8 @@ def get_nakshtra(name) do
     String.match?(name,~r/^me/) -> {"magha",4,"rakshas","antya","simha","vanacara","mushak","kshattriya"}
     String.match?(name,~r/^mo/) -> {"purvaphalguni",1,"manushya","madhya","simha","vanacara","mushak","kshattriya"}
     String.match?(name,~r/^taa/) -> {"purvaphalguni",2,"manushya","madhya","simha","vanacara","mushak","kshattriya"}
-    String.match?(name,~r/^tee/) -> {"purvaphalguni",3,"manushya","madhya","simha","vanacara","mushak","kshattriya"}
-    String.match?(name,~r/^too/) -> {"purvaphalguni",4,"manushya","madhya","simha","vanacara","mushak","kshattriya"}
+    String.match?(name,~r/^tee|^ti/) -> {"purvaphalguni",3,"manushya","madhya","simha","vanacara","mushak","kshattriya"}
+    String.match?(name,~r/^too|^tu/) -> {"purvaphalguni",4,"manushya","madhya","simha","vanacara","mushak","kshattriya"}
     String.match?(name,~r/^te/) -> {"uttaraphalguni",1,"manushya","aadi","simha","vanacara","gow","kshattriya"}
     String.match?(name,~r/^to/) -> {"uttaraphalguni",2,"manushya","aadi","kanya","human","gow","vaishya"}
     String.match?(name,~r/^paa|^pa/) -> {"uttaraphalguni",3,"manushya","aadi","kanya","human","gow","vaishya"}
@@ -100,8 +102,8 @@ def get_nakshtra(name) do
     String.match?(name,~r/^pe/) -> {"chitra",1,"rakshas","madhya","kanya","human","vyaghra","vaishya"}
     String.match?(name,~r/^po/) -> {"chitra",2,"rakshas","madhya","kanya","human","vyaghra","vaishya"}
     String.match?(name,~r/^raa|^ra/) -> {"chitra",3,"rakshas","madhya","tula","human","vyaghra","shudra"}
-    String.match?(name,~r/^ree/) -> {"chitra",4,"rakshas","madhya","tula","human","vyaghra","shudra"}
-    String.match?(name,~r/^roo/) -> {"swati",1,"deva","antya","tula","human","mahish","shudra"}
+    String.match?(name,~r/^ree|^ri/) -> {"chitra",4,"rakshas","madhya","tula","human","vyaghra","shudra"}
+    String.match?(name,~r/^roo|^ru/) -> {"swati",1,"deva","antya","tula","human","mahish","shudra"}
     String.match?(name,~r/^re/) -> {"swati",2,"deva","antya","tula","human","mahish","shudra"}
     String.match?(name,~r/^ro/) -> {"swati",3,"deva","antya","tula","human","mahish","shudra"}
     String.match?(name,~r/^taa|^ta/) -> {"swati",4,"deva","antya","tula","human","mahish","shudra"}
