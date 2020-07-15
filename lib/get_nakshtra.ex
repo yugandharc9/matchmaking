@@ -47,6 +47,7 @@ def get_nakshtra(name) do
   cond do
     #champa ? dhiraj ? dheeraj
     # da dee du repeated
+    # https://astrobix.com/astrosight/192-varnadi-ashtakoot-milan-ashtakoot-milan-ashtakoot-guna-milan.html
     String.match?(name,~r/^chu/) -> {"ashwini",1,"deva","aadi","mesh","chatushpada","ashwa","kshattriya"}
     String.match?(name,~r/^che/) -> {"ashwini",2,"deva","aadi","mesh","chatushpada","ashwa","kshattriya"}
     String.match?(name,~r/^cho/) -> {"ashwini",3,"deva","aadi","mesh","chatushpada","ashwa","kshattriya"}
