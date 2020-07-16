@@ -1,5 +1,9 @@
 defmodule Matchmaking do
 
+  #reference
+
+  #https://imarriages.com/advice/how-kundali-matching-works
+
   #Formulae
 
   #https://akashvaaniteam.blogspot.com/2018/06/8-things-ashtakoot-guna-milan-can-suggest-you-according-to-janam-kundali.html
