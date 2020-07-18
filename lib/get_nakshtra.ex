@@ -83,7 +83,7 @@ def get_nakshtra(name) do
     String.match?(name,~r/^hu/) -> {"pushya",1,"deva","madhya","karka","jalchar","mesha","brahmin"}
     String.match?(name,~r/^he/) -> {"pushya",2,"deva","madhya","karka","jalchar","mesha","brahmin"}
     String.match?(name,~r/^ho/) -> {"pushya",3,"deva","madhya","karka","jalchar","mesha","brahmin"}
-    String.match?(name,~r/^daa|^da/) -> {"pushya",4,"deva","madhya","karka","jalchar","mesha","brahmin"}
+    String.match?(name,~r/^daa/) -> {"pushya",4,"deva","madhya","karka","jalchar","mesha","brahmin"}
     String.match?(name,~r/^dee|^di/) -> {"ashlesha",1,"rakshas","antya","karka","jalchar","marjar","brahmin"}
     String.match?(name,~r/^doo|^du/) -> {"ashlesha",2,"rakshas","antya","karka","jalchar","marjar","brahmin"}
     String.match?(name,~r/^de/) -> {"ashlesha",3,"rakshas","antya","karka","jalchar","marjar","brahmin"}
@@ -150,7 +150,7 @@ def get_nakshtra(name) do
     String.match?(name,~r/^soo|su/) -> {"shatabhisha",4,"rakshas","aadi","kumbha","human","ashwa","shudra"}
     String.match?(name,~r/^se/) -> {"purvabhadrapada",1,"manushya","aadi","kumbha","human","simha","shudra"}
     String.match?(name,~r/^so/) -> {"purvabhadrapada",2,"manushya","aadi","kumbha","human","simha","shudra"}
-    String.match?(name,~r/^daa|^da/) -> {"purvabhadrapada",3,"manushya","aadi","kumbha","human","simha","shudra"}
+    String.match?(name,~r/^da/) -> {"purvabhadrapada",3,"manushya","aadi","kumbha","human","simha","shudra"}
     String.match?(name,~r/^dee|^di/) -> {"purvabhadrapada",4,"manushya","aadi","meen","jalchar","simha","brahmin"}
     String.match?(name,~r/^doo|^du/) -> {"uttarabhadrapada",1,"manushya","madhya","meen","jalchar","gow","brahmin"}
     String.match?(name,~r/^tha/) -> {"uttarabhadrapada",2,"manushya","madhya","meen","jalchar","gow","brahmin"}
