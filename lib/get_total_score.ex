@@ -23,7 +23,7 @@ defmodule Matchmaking.TotalScore do
     "vasya" => Matchmaking.Vasya.get_vasya_score(g_vasya,b_vasya),
     "varna" => Matchmaking.Varna.get_varna_score(g_varna,b_varna)
     }
-    {mp,mp |> Enum.reduce(0,fn {_,v},acc -> v+acc end)}
+    %{info: mp, total: mp |> Enum.reduce(0,fn {_,v},acc -> v+acc end)}
   end
 
 end
