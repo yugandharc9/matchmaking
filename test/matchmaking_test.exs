@@ -54,20 +54,20 @@ defmodule MatchmakingTest do
   end
 
   test "yoni test" do
-    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"ashwa") end) == [4,2,2,3,2,2,2,1,0,1,1,3,2,1]
-    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"gaja") end) == [2,4,3,3,2,2,2,2,3,1,2,3,2,0]
-    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"mesha") end) == [2,3,4,3,2,2,2,2,3,1,2,3,2,0]
-    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"sarpa") end) == [3,3,2,4,2,1,1,1,1,2,2,2,0,2]
-    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"swan") end) == [2,2,1,2,4,2,1,2,3,1,0,2,1,1]
-    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"marjar") end) == [2,2,2,1,2,4,0,2,2,1,3,3,2,1]
-    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"mushak") end) == [2,2,2,1,1,1,0,2,2,2,2,2,1,2]
-    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"gow") end) == [1,2,3,1,2,2,2,4,3,0,3,2,2,1]
-    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"mahish") end) == [0,3,3,1,2,2,2,3,4,1,2,2,2,2]
-    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"vyaghra") end) == [1,1,1,2,1,1,2,0,1,4,1,1,2,1]
-    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"mriga") end) == [1,2,2,2,0,3,2,3,2,1,4,2,2,1]
-    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"vanar") end) == [3,3,0,2,2,3,2,2,2,1,2,4,3,2]
-    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"nakul") end) == [2,2,3,0,1,2,1,2,2,2,2,3,4,2]
-    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"simha") end) == [1,0,1,2,1,1,2,1,2,1,1,2,2,4]
+    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"ashwa") end) ==  [4,2,3,2,2,2,2,3,3,2,3,2,2,1]
+    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"gaja") end) ==   [2,4,3,2,2,2,2,2,3,1,2,3,2,0]
+    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"mesha") end) ==  [3,3,4,3,2,3,2,3,2,2,3,0,3,1]
+    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"sarpa") end) ==  [2,2,3,4,2,2,1,1,2,2,2,2,0,2]
+    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"swan") end) ==   [2,2,2,2,4,1,1,2,2,1,0,2,2,1]
+    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"marjar") end) == [2,2,3,2,1,4,0,2,2,1,2,2,2,2]
+    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"mushak") end) == [2,2,2,1,1,0,4,2,2,2,2,2,2,1]
+    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"gow") end) ==    [3,2,3,1,2,2,2,4,1,0,3,2,3,1]
+    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"mahish") end) == [3,3,2,2,2,2,3,4,4,2,2,2,3,2]
+    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"vyaghra") end) ==[2,1,2,1,1,2,0,1,1,4,1,2,2,1]
+    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"mriga") end) ==  [3,2,3,2,0,2,2,3,2,1,4,2,2,2]
+    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"vanar") end) ==  [2,3,0,2,2,2,2,2,2,1,2,4,2,3]
+    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"nakul") end) ==  [2,2,3,0,2,2,2,3,2,2,2,2,4,2]
+    assert Enum.map(["ashwa","gaja","mesha","sarpa","swan","marjar","mushak","gow","mahish","vyaghra","mriga","vanar","nakul","simha"], fn x ->Yoni.get_yoni_score(x,"simha") end) ==  [1,2,1,2,1,2,1,1,3,2,2,2,2,4]
   end
 
 end
