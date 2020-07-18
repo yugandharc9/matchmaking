@@ -67,7 +67,7 @@ def get_nakshtra(name) do
     String.match?(name,~r/^ई|^ee/) -> {"krittika",2,"rakshas","antya","vrishabh","chatushpada","mesha","vaishya"}
     String.match?(name,~r/^उ|^u/) -> {"krittika",3,"rakshas","antya","vrishabh","chatushpada","mesha","vaishya"}
     String.match?(name,~r/^ए|^e/) -> {"krittika",4,"rakshas","antya","vrishabh","chatushpada","mesha","vaishya"}
-    String.match?(name,~r/^4|^o/) -> {"rohini",1,"manushya","antya","vrishabh","chatushpada","sarpa","vaishya"}
+    String.match?(name,~r/^ओ|^o/) -> {"rohini",1,"manushya","antya","vrishabh","chatushpada","sarpa","vaishya"}
     String.match?(name,~r/^वा|^vaa|^va/) -> {"rohini",2,"manushya","antya","vrishabh","chatushpada","sarpa","vaishya"}
     String.match?(name,~r/^वी|^vee|^vi/) -> {"rohini",3,"manushya","antya","vrishabh","chatushpada","sarpa","vaishya"}
     String.match?(name,~r/^वु|^vu|^voo/) -> {"rohini",4,"manushya","antya","vrishabh","chatushpada","sarpa","vaishya"}
